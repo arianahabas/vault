@@ -16,7 +16,7 @@ export default function AboutPage() {
           </h1>
           <p className="lead text-muted mb-4">
             The Vault is your personal space to store, manage, and revisit digital
-            files with peace of mind. Designed for clarity and speed, it's a place where your
+            files with peace of mind. Designed for clarity and speed, its a place where your
             documents feel at home.
           </p>
 

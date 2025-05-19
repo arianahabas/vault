@@ -1,0 +1,124 @@
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-poppins) !important;
+}
+
+.shadow-white {
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.35);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.fade-out {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.fade-out.fading {
+  opacity: 0;
+}
+
+.card {
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #ffffff, #f1f3f5);
+}
+
+.btn-outline-danger {
+  transition: all 0.2s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.list-group-item {
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bg-teal {
+  background-color: #14b8a6 !important;
+}
+
+.border-teal {
+  border-color: #14b8a6 !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.toast-enhanced {
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+  font-size: 1.1rem;
+  animation: slideIn 0.3s ease-out, pulse 0.5s ease-in-out;
+}
+
+.toast-success {
+  border: 2px solid #28a745;
+  background: linear-gradient(145deg, #e6f3e6, #ffffff);
+}
+
+.bg-success {
+  background: linear-gradient(145deg, #28a745, #218838) !important;
+}
+
+.toast-error {
+  border: 2px solid #dc3545;
+  background: linear-gradient(145deg, #f8e1e4, #ffffff);
+}
+
+.bg-error {
+  background: linear-gradient(145deg, #dc3545, #c82333) !important;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.toast-enhanced[aria-hidden="true"] {
+  animation: slideOut 0.3s ease-in forwards;
+}
